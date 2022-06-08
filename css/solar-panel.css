@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    color: #21252a;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url(../img/_25-HP-SolarPanels-D.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+}
+.flex-container {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 5vh;
+    background-color: transparent;
+    margin-top: 1vh;
+}
+.flex-item {
+    align-items: center;
+}
+.main-nav, .sec-nav{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+
+}
+.main-nav li, .sec-nav li {
+    margin-left: 0.5vw;
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.main-nav li:hover, .sec-nav li:hover{ 
+    /* background-color: rgba(128, 128, 128, 0.3); */
+    background: linear-gradient(90deg,rgba(128, 128, 128, 0) 50%, rgba(128, 128, 128, 0.3)  0) 
+    var(--_p,100%)/200% no-repeat;
+}
+.logo {
+    align-self: center;
+
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+.model-name p a {
+    text-decoration: underline;
+    transition: 0.35 ease;
+}
+.model-name p a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60vh;
+}
+.flex-property a {
+    margin-left: 1vw;
+    background-color: #3a3e42;
+    padding: 10px 100px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.stock a {
+    background-color: #fff;
+    color: #21252a;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.stock:hover, .custom:hover {
+    animation-name: pulse;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+}
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+h1 {
+    font-size: 45px;
+    margin-bottom: -2px;
+}
